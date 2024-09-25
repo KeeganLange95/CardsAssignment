@@ -1,0 +1,56 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));;
+    gap: 20px;
+    padding: 20px;
+    
+
+}
+.grid-Item {
+    background-color: gray;
+    padding: 20px;
+    min-height: 50px;
+}
+.grid-container #card4 {
+    background-color: red;
+}
+#card2 p {
+    display: grid;
+    grid-row: auto;
+}
+#card3 p {
+
+}
+#card4 .space-evenly {
+    display: flex;
+    align-content: space-evenly;
+
+}
+#card5 p {
+    display: inline;
+}
+#card6 p {
+    display: flex;
+    justify-content: center;
+    -ms-flex-align: center;
+}
+#card7 p {
+    display: flex;
+    justify-content: center;
+}
+#card8 p {
+    
+}
+#card9 p {
+
+}
+@media(max-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+@media(max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(1, auto);
+    }
+}
